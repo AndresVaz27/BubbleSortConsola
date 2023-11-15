@@ -8,6 +8,10 @@ namespace BubbleSortConsola
 {
     internal class Program
     {
+        // Bubble Sort = compara un par de elementos adyacentes, los cuales se intercambian de posicion si no están en órden.
+        // Complejidad de Tiempo = O(n^2)
+        // Esta bien para programas con pocos datos por ordenar
+        // Por favor no lo usen para ordenar muchos datos!! Será muy ineficiente.
         static void Main(string[] args)
         {
             int[] array = { 9, 1, 8, 2, 7, 3, 6, 4, 5 };
