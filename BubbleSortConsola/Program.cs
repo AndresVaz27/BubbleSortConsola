@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,13 +16,17 @@ namespace BubbleSortConsola
         static void Main(string[] args)
         {
             int[] array = { 9, 1, 8, 2, 7 };
-            
+
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             BubbleSort(array);
+            stopwatch.Stop();
 
             for (int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine(array[i]);
             }
+            Console.WriteLine("Tiempo de ejecucion del metodo BubbleSort() = " + stopwatch.Elapsed);
             Console.ReadKey();
         }
         public static void BubbleSort(int[] array)
